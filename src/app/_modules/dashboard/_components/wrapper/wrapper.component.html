@@ -1,4 +1,8 @@
 <div class="wrapper">
     <app-left-bar></app-left-bar>
-    <app-main></app-main>
+    <app-main-bathroom  *ngIf="option === 'bathroom'"></app-main-bathroom>
+    <app-main-benchea   *ngIf="option === 'benchea'"></app-main-benchea>
+    <app-main-pleso     *ngIf="option === 'pleso'"></app-main-pleso>
+    <app-main-kitchen   *ngIf="option === 'kitchen'"></app-main-kitchen>
+    <app-main-dashboard *ngIf="option === 'dashboard'"></app-main-dashboard>
 </div>
