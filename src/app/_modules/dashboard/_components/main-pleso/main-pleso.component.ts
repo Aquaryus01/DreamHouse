@@ -10,7 +10,6 @@ export class MainPlesoComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    console.log("biness");
   }
 
 }

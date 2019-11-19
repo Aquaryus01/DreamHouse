@@ -1,8 +1,15 @@
-<div class="wrapper">
+<div class="wrapper" [ngClass]="{'perfect-scrollbar-on nav-open': isActivate}">
     <app-left-bar></app-left-bar>
-    <app-main-bathroom  *ngIf="option === 'bathroom'"></app-main-bathroom>
-    <app-main-benchea   *ngIf="option === 'benchea'"></app-main-benchea>
-    <app-main-pleso     *ngIf="option === 'pleso'"></app-main-pleso>
-    <app-main-kitchen   *ngIf="option === 'kitchen'"></app-main-kitchen>
-    <app-main-dashboard *ngIf="option === 'dashboard'"></app-main-dashboard>
+    <div class="main-panel ps-container ps-theme-default" data-ps-id="bceca932-6e4a-1e06-c601-822a4417d1f7">
+        <app-navbar></app-navbar>
+        <div class="content content-margin-top">
+            <div class="container-fluid">
+                <app-main-bathroom  *ngIf="option === 'bathroom'"></app-main-bathroom>
+                <app-main-benchea   *ngIf="option === 'benchea'"></app-main-benchea>
+                <app-main-pleso     *ngIf="option === 'pleso'"></app-main-pleso>
+                <app-main-kitchen   *ngIf="option === 'kitchen'"></app-main-kitchen>
+                <app-main-dashboard *ngIf="option === 'dashboard'"></app-main-dashboard>
+            </div>
+        </div>
+    </div>
 </div>
