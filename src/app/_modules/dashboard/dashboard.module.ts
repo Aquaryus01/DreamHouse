@@ -10,12 +10,13 @@ import { MainBencheaComponent } from './_components/main-benchea/main-benchea.co
 import { MainBathroomComponent } from './_components/main-bathroom/main-bathroom.component';
 import { MainKitchenComponent } from './_components/main-kitchen/main-kitchen.component';
 import { NavbarComponent } from './_components/navbar/navbar.component';
-
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
   declarations: [LeftBarComponent, MainComponent, WrapperComponent, MainDashboardComponent, MainPlesoComponent, MainBencheaComponent, MainBathroomComponent, MainKitchenComponent, NavbarComponent],
   imports: [
+    FormsModule,
     CommonModule,
     DashboardRoutingModule
   ],

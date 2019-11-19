@@ -7,7 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MainDashboardComponent implements OnInit {
 
-  constructor() { }
+  password: String;
+  errorCredential: boolean;
+  succesCredential: boolean
+  constructor() { 
+    this.errorCredential = false;
+    this.succesCredential = false;
+  }
 
   ngOnInit() {
   }
